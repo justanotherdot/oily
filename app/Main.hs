@@ -1,6 +1,7 @@
 module Main where
 
-import Lib
+import qualified E28 as E28
 
 main :: IO ()
-main = someFunc
+main = do
+  print E28.solveIt
