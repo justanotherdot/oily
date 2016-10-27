@@ -1,6 +1,6 @@
 name:                oily
 version:             0.1.0.0
-synopsis:            Initial project template from stack
+synopsis:            Project Euler Questions in Haskell
 description:         Please see README.md
 homepage:            https://github.com/justanotherdot/oily#readme
 license:             BSD3
@@ -8,7 +8,7 @@ license-file:        LICENSE
 author:              Ryan James Spencer
 maintainer:          spencer.ryanjames@gmail.com
 copyright:           Copyright (c) 2016 Ryan James Spencer
-category:            Text
+category:            Puzzle
 build-type:          Simple
 -- extra-source-files:
 cabal-version:       >=1.10
@@ -16,7 +16,10 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     E28
+                      ,E35
   build-depends:       base >= 4.7 && < 5
+                      ,containers
+                      ,data-ordlist
   default-language:    Haskell2010
 
 executable oily-exe
